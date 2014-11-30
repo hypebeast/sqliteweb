@@ -8,6 +8,7 @@ import (
 	"os/exec"
 	"os/signal"
 
+	"github.com/goji/httpauth"
 	"github.com/hypebeast/gojistaticbin"
 	flags "github.com/jessevdk/go-flags"
 	"github.com/zenazn/goji"
@@ -44,8 +45,6 @@ func initOptions() {
 
 	// Remove all flags to make sure that Goji doesn't read them
 	os.Args = os.Args[:1]
-
-	// TODO: Configure log to support logging to a file
 }
 
 // initClient initialize the database client.
@@ -68,13 +67,16 @@ func initServer(db *client.DbClient) {
 	// Initialize the API controller
 	controllers.Init(db)
 
+	// Staticbin middleware
 	goji.Use(gojistaticbin.Staticbin("static", Asset, gojistaticbin.Options{
 		SkipLogging: true,
 		IndexFile:   "index.html",
 	}))
 
-	// api := web.New()
-	// goji.Handle("/api/*", api)
+	// Httpauth middleware
+	if options.AuthUser != "" && options.AuthPass != "" {
+		goji.Use(httpauth.SimpleBasicAuth(options.AuthUser, options.AuthPass))
+	}
 
 	goji.Get("/api/info", controllers.Info)
 	goji.Get("/api/table", controllers.Tables)
