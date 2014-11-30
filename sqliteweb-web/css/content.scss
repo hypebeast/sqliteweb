@@ -1,0 +1,64 @@
+
+#content {
+    position: absolute;
+    top: $navbar_height;
+    left: $sidebar_width;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+#structure {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: none;
+
+    h2 {
+
+    }
+}
+
+#input {
+    height: 250px;
+    overflow: hidden;
+    display: none;
+
+    .wrapper {
+        position: relative;
+
+        #editor {
+            height: 200px;
+        }
+    }
+
+    .actions {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .btn {
+        min-width: 90px;
+        border: none;
+        border-radius: 0;
+    }
+}
+
+#output {
+    position: absolute;
+    top: 251px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    display: none;
+
+    &.full {
+        top: 0px;
+    }
+
+    .wrapper {
+        position: relative;
+    }
+}

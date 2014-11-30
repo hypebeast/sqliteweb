@@ -1,0 +1,26 @@
+{
+  "name": "sqliteweb",
+  "version": "0.1.0",
+  "description": "SQLite browser written in Go",
+  "dependencies": {
+    "del": "~0.1.3"
+  },
+  "devDependencies": {
+    "gulp-plumber": "~0.6.3",
+    "gulp-sass": "~0.7.2",
+    "gulp": "~3.8.5",
+    "gulp-csso": "~0.2.9",
+    "gulp-uglify": "~0.3.1",
+    "gulp-concat": "~2.2.0",
+    "bower": "~1.3.5",
+    "del": "~0.1.1",
+    "gulp-coffee": "~2.1.1",
+    "gulp-util": "~3.0.0",
+    "gulp-clean": "~0.3.1",
+    "gulp-webserver": "~0.8.7",
+    "gulp-coffeelint": "~0.4.0",
+    "opn": "~1.0.0"
+  },
+  "author": "Sebastian Ruml",
+  "license": "MIT"
+}

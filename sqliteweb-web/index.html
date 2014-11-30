@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>sqliteweb</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Language" content="en">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+   <!--[if lt IE 7]>
+       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+   <![endif]-->
+
+  <div id="main">
+    <div id="navbar">
+      <ul>
+        <li id="table_structure">Structure</li>
+        <li id="table_content">Content</li>
+        <li id="table_query">SQL Query</li>
+      </ul>
+      <a href="#" style="float: right;">Open Database</a>
+    </div>
+
+    <div id="sidebar">
+      <div class="tabels-list">
+        <div class="wrap">
+          <div class="title">Database Tables</div>
+          <ul id="tables"></ul>
+        </div>
+      </div>
+
+      <div class="information">
+        <div class="wrap">
+          <div id="db_information" class="title">Database Information</div>
+          <ul>
+            <li>Filename: <span id="db_file_name"></span></li>
+            <li>Size: <span id="db_size"></span></li>
+            <li>Tables: <span id="db_count_tables"></span></li>
+            <li>Indexes: <span id="db_count_indexes"></span></li>
+          </ul>
+          <div id="table_information" class="title">Table Information</div>
+          <ul>
+            <li>Rows: <span id="table_count_rows"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+        <div id="structure">
+          <div class="sql">
+            <h3>SQL</h3>
+            <div>
+              <pre id="structure_sql"></pre>
+            </div>
+            <h3>Columns</h3>
+            <div id="structure_columns">
+              <table id="table_columns" class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Primary Key</th>
+                    <th>Not Null</th>
+                    <th>Default</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <h3>Indexes</h3>
+            <div id="structure_indexes">
+              <table id="table_indexes" class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Columns</th>
+                    <th>Unique</th>
+                    <th>SQL</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+
+              <div class="modal fade" id="index_sql_modal" tabindex="-1" role="dialog" aria-labelledby="indexSqlLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                      <pre></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="input">
+            <div class="wrapper">
+              <div id="editor"></div>
+              <div class="actions">
+                <button id="run" class="btn btn-primary">Run</button>
+                <button id="export_csv" class="btn">Export CSV</button>
+                <button id="export_json" class="btn">Export JSON</button>
+              </div>
+            </div>
+        </div>
+
+        <div id="output">
+          <div class="wrapper">
+            <table id="table_results" class="table table-striped"></table>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="connection_dialog">
+
+  </div>
+
+  <script src="vendor/ace/ace.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+sqliteweb-web/bower_components
+sqliteweb-web/js/*.js
+sqliteweb-web/css/*.css
+sqliteweb-server/assets.go
+sqliteweb-server/sqliteweb
+sqliteweb-server/static/js
+sqliteweb-server/static/css
+sqliteweb-server/static/vendor
+sqliteweb-server/static/index.html
+node_modules
+data

@@ -1,0 +1,69 @@
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: $sidebar_width;
+    height: $navbar_height;
+    width: 100%;
+    background: $nav-bg-color;
+    box-shadow: inset 0 -1px 0 0 $nav-shadow-color;
+
+    ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        width: 600px;
+
+        li {
+            display: block;
+            float: left;
+            margin-right: 1px;
+            margin-left: 1px;
+            padding-left: 14px;
+            padding-right: 14px;
+            height: 50px;
+            line-height: 49px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            list-style: none;
+            list-style-type: none;
+            color: $grey-dark-1;
+
+            &:hover {
+                background: $bg-main-color;
+                color: #000;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &.selected {
+                margin: 0;
+                background: $bg-main-color;
+                color: #000;
+                border-right: 1px solid $nav-shadow-color;
+                border-left: 1px solid $nav-shadow-color;
+                border-bottom: none;
+                font-weight: bold;
+
+                &:before {
+
+                }
+
+                &:first-child {
+                    border-left: none;
+                }
+            }
+        }
+    }
+
+    .open-db {
+        display: block;
+        float: right;
+        height: 50px;
+        line-height: 50px;
+    }
+}

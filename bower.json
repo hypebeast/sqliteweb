@@ -1,0 +1,25 @@
+{
+  "name": "sqliteweb",
+  "version": "0.1.0",
+  "authors": [
+    "Sebastian Ruml <sebastian.ruml@gmail.com>"
+  ],
+  "description": "SQLite browser written in Go",
+  "license": "MIT",
+  "homepage": "http://github.com/hypebeast/sqliteweb",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "sqliteweb-web/ower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.1",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "font-awesome": "~4.2.0"
+  }
+}

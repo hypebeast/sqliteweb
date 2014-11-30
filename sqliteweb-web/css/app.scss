@@ -1,0 +1,27 @@
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "../bower_components/font-awesome/scss/font-awesome";
+
+@import "colors";
+@import "variables";
+@import "navbar";
+@import "sidebar";
+@import "table";
+@import "content";
+
+
+body {
+  background: $bg-main-color;
+  font-family: $font-stack;
+}
+
+.clear {
+    clear: both;
+}
+
+////
+// Main container
+////
+
+#main {
+    display: none;
+}
