@@ -122,6 +122,16 @@ loadTables = (cb) ->
   getTables (data) ->
     data.tables.forEach (item) ->
       $('<li><span>' +  item + '</span></li>').appendTo('#tables')
+
+    # Select the first table
+    if data.tables.length > 0
+      $('#tables li.selected').removeClass 'selected'
+      table = $('#tables li:first')
+      $(table).addClass 'selected'
+
+      showTableInfo()
+      showTableStructure()
+
     cb()
 
 showDatabaseInfo = () ->
