@@ -1,11 +1,15 @@
+.DS_Store
 sqliteweb-web/bower_components
 sqliteweb-web/js/*.js
 sqliteweb-web/css/*.css
+sqliteweb-web/fonts
 sqliteweb-server/assets.go
 sqliteweb-server/sqliteweb
 sqliteweb-server/static/js
 sqliteweb-server/static/css
+sqliteweb-server/static/fonts
 sqliteweb-server/static/vendor
 sqliteweb-server/static/index.html
+sqliteweb-server/bin
 node_modules
 data
