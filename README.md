@@ -2,13 +2,13 @@
 
 `sqliteweb` is a web-based SQLite database browser. It's written in *Go*.
 
-It's based on [pgweb](https://github.com/sosedoff/pgweb) and [sqlite-browser](https://github.com/coleifer/sqlite-browser).
+It's inspired and influenced by [pgweb](https://github.com/sosedoff/pgweb) and [sqlite-browser](https://github.com/coleifer/sqlite-browser).
 
 ![](http://sebastianruml.name/images/projects/sqliteweb/sqliteweb-structure.png)
 
 ## Overview
 
-`sqliteweb` is a web-based SQLite database browser. The goal is to provide a simple and intuitive browser for SQLite databases that provides basic functions to browse SQLite databases and tables.
+`sqliteweb` is a web-based SQLite database browser. The goal is to provide a simple and intuitive browser for SQLite databases. It provides basic functions to browse SQLite databases and tables.
 
 ## Features
 
@@ -22,7 +22,7 @@ It's based on [pgweb](https://github.com/sosedoff/pgweb) and [sqlite-browser](ht
 
 ## Installation
 
-Use the pre-build relase images from (https://github.com/hypebeast/sqliteweb/releases)[Github Releases].
+Use the pre-build relase images from [Github Releases](https://github.com/hypebeast/sqliteweb/releases).
 
 Currently pre-build releases are available for the following platforms:
 
@@ -187,6 +187,7 @@ $ ./sqliteweb
 ## Contact
 
   * Sebastian Ruml, <sebastian@sebastianruml.name>
+  * Twitter: https://twitter.com/dar4_schneider
 
 ## License
 
