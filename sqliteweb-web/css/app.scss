@@ -1,13 +1,13 @@
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
-@import "../bower_components/font-awesome/scss/font-awesome";
-
 @import "colors";
 @import "variables";
 @import "navbar";
 @import "sidebar";
 @import "table";
+@import "button";
 @import "content";
 
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "../bower_components/font-awesome/scss/font-awesome";
 
 body {
   background: $bg-main-color;
@@ -24,4 +24,5 @@ body {
 
 #main {
     display: none;
+    width: 100%;
 }

@@ -53,6 +53,7 @@ $information_height: 220px;
 
                     &.selected {
                         font-weight: bold;
+                        border-left: 4px solid $mint;
                         color: $table-list-sel-color;
                         background: $table-list-bg-sel-color;
                         -webkit-font-smoothing: antialiased;
