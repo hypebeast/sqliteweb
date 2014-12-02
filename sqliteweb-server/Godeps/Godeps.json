@@ -1,0 +1,36 @@
+{
+	"ImportPath": "github.com/hypebeast/sqliteweb/sqliteweb-server",
+	"GoVersion": "go1.3.1",
+	"Deps": [
+		{
+			"ImportPath": "github.com/goji/httpauth",
+			"Rev": "5279c8de0d24f35f88205340317b30b31084892c"
+		},
+		{
+			"ImportPath": "github.com/hypebeast/gojistaticbin",
+			"Rev": "6bec6fdf0e5d834280647f7856fbfb6c99aca0b4"
+		},
+		{
+			"ImportPath": "github.com/jessevdk/go-flags",
+			"Comment": "v1-280-g37e89eb",
+			"Rev": "37e89eb6730ccfebfa05c17940954e4308719317"
+		},
+		{
+			"ImportPath": "github.com/jmoiron/sqlx",
+			"Comment": "sqlx-v1.0-52-g7172c4f",
+			"Rev": "7172c4f697fe8b4743fc8e9410fa161fc4623628"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-sqlite3",
+			"Rev": "d10e2c8f62100097910367dee90a9bd89d426a44"
+		},
+		{
+			"ImportPath": "github.com/zenazn/goji",
+			"Rev": "17b9035bcd162f59e1a1247d4a755124c37052c5"
+		},
+		{
+			"ImportPath": "gopkg.in/unrolled/render.v1",
+			"Rev": "4796b5bc747483bf9b20a50b2c80e00ed2c85fab"
+		}
+	]
+}
