@@ -1,11 +1,13 @@
 help:
-	@echo "  env         create a development environment using virtualenv"
-	@echo "  deps        install dependencies"
-	@echo "  clean       remove unwanted stuff"
-	@echo "  lint        check style with flake8"
-	@echo "  production  Clean and do a release"
-	@echo "  release     package and upload a release"
-	@echo "  sdist       package"
+	@echo "  setup           setup the development environment and installs all dependencies"
+	@echo "  bindata         create a release asset file with go-bindata"
+	@echo "  bindata-debug   create a debug asset file with go-bindata"
+	@echo "  dev             build with debug asset file"
+	@echo "  build           build with release asset file"
+	@echo "  run             build and run sqliteweb"
+	@echo "  release         build releases with gox"
+	@echo "  clean           clean up"
+	@echo "  clean-assets    clean up static files"
 
 bindata:
 	go-bindata -o ./assets.go static/...

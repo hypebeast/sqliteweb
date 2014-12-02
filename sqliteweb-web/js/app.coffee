@@ -325,12 +325,8 @@ $ ->
 
     exportCSV query
 
-  $('#export_json').on 'click', () ->
-    query = $.trim editor.getValue()
-    if query.length == 0
-      return
-
-    exportJSON query
+  $('.btn-file :file').on 'fileselect', (event, numFiles, label) ->
+    console.log label
 
   # Start here and load tables
   loadTables () ->
