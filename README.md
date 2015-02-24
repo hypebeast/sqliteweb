@@ -1,5 +1,8 @@
 # sqliteweb
 
+[![views](https://sourcegraph.com/api/repos/github.com/hypebeast/sqliteweb/.counters/views.svg)](https://sourcegraph.com/github.com/hypebeast/sqliteweb)
+[![views 24h](https://sourcegraph.com/api/repos/github.com/hypebeast/sqliteweb/.counters/views-24h.svg)](https://sourcegraph.com/github.com/hypebeast/sqliteweb?no-count=1)
+
 `sqliteweb` is a web-based SQLite database browser. It's written in *Go*.
 
 It's inspired and influenced by [pgweb](https://github.com/sosedoff/pgweb) and [sqlite-browser](https://github.com/coleifer/sqlite-browser).
